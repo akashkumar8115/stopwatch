@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  background-color: #222242;
+overflow: hidden;
+}
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222242;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.stops_watch {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+}
+
+.stopwatch {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#display {
+  color: white;
+  font-size: 58px;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  background-color: #151532;
+
+  border-radius: 9999px;
+  padding: 5.8rem 0rem 5.8rem 0rem;
+  animation-name: shine;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes shine {
+  0%,
+  100% {
+    box-shadow: 0px 0px 32px -12px rgba(33, 160, 40, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 32px 3px rgba(33, 160, 40, 0.5);
+  }
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#start {
+  background-color: transparent;
+  border: 1px solid rgb(250, 250, 250);
+  color: white;
+  border-radius: 100px;
+}
+
+#stop {
+  background-color: transparent;
+  border: 1px solid rgb(250, 250, 250);
+  color: white;
+  border-radius: 100px;
+}
+
+#reset {
+  background-color: transparent;
+  border: 1px solid rgb(250, 250, 250);
+  color: rgb(244, 244, 244);
+  border-radius: 100px;
+}
+
+.controls button:hover {
+  opacity: 0.9;
+  box-shadow: 10px 10px 10px 5px rgba(152, 152, 152, 0.5);
+}
